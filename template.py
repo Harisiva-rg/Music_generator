@@ -16,7 +16,7 @@ file_list  = [
     f"src/{projectName}/pipeline/__init__.py",
     f"src/{projectName}/entity/config_entity.py",
     f"src/{projectName}/constants/__init__.py",
-    "config/confog.yaml",
+    "config/config.yaml",
     # "dvc.yaml",
     "params.yaml",
     "schema.yaml",
@@ -25,7 +25,9 @@ file_list  = [
     "Dockerfile",
     "requirements.txt",
     "setup.py",
-    "research/experiments.ipynb"
+    "models/stored_models.txt",
+    "data/data_sources.txt",
+    "research/experiments.ipynb",
     "templates/index.html"
 ]
 
@@ -36,11 +38,11 @@ for filepath in file_list:
 
     if filedir != "":
         os.makedirs(filedir, exist_ok = True)
-        logging.info(f"Creating directory; {filedir} for the file: {filename}")
+        logging.info(f"Created directory: {filedir}")
 
     if(not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:
             pass
-            logging.info(f"Creating empty file: {filepath}")
+            logging.info(f"Created empty file: {filepath}")
     else:
         logging.info(f"{filename} already exists")
