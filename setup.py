@@ -1,29 +1,25 @@
-import setuptools
+from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding="utf-8") as f:
-    long_description = f.read()
+with open('README.md', 'r', encoding='utf-8') as f:
+    long_desc = f.read()
 
+setup(
+    name='music_generator',
+    version='0.0.1',
+    author='Harisiva R G',
+    author_email='harisivarg@gmail.com',
+    description='A package to create music notes',
+    long_description=long_desc,
+    long_description_content_type="text/markdown",
+    # url='https://github.com/Harisiva-rg/music_generator',
+    packages=find_packages(),
+    install_requires=[], 
+    license="MIT",
+    classifiers = [
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.10",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.10",
 
-__version__ = "0.0.0"
-
-REPO_NAME = "Music_generator"
-AUTHOR_USER_NAME = "Harisiva-rg"
-# SRC_REPO = "Music_generator"
-AUTHOR_EMAIL = ""
-
-
-setuptools.setup(
-    name=REPO_NAME,
-    version=__version__,
-    author=AUTHOR_USER_NAME,
-    author_email=AUTHOR_EMAIL,
-    description="Python package to generate music notes",
-    long_description=long_description,
-    long_description_content="text/markdown",
-    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
-    project_urls={
-        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
-    },
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src")
 )
