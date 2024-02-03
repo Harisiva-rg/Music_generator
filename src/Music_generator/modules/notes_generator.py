@@ -44,4 +44,5 @@ class NotesGenerator:
         logger.info("<<<<<<<<<<<<<< Initialised >>>>>>>>>>>>>>>>")
         music_notes = NotesGenerator.sample(EPOCHS,SEED,NUM_CHARS)
         store_value("music_notes", music_notes)
+        print(music_notes)
         logger.info("<<<<<<<<<<<<<< Completed >>>>>>>>>>>>>>>>")
