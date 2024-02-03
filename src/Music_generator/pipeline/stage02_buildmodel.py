@@ -1,4 +1,4 @@
-from music_generator.modules.build_model import RNN_model
+from music_generator.modules.model_builder import RNN_model
 from music_generator.constants import *
 from music_generator import logger
 

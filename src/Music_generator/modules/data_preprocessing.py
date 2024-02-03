@@ -4,6 +4,9 @@ import numpy as np
 # from collections import Counter
 import matplotlib.pyplot as plt
 from music_generator.constants import *
+# import music_generator.constants
+from music_generator.utilities import store_value
+
 from music_generator import logger
 
 
@@ -46,7 +49,7 @@ class DataPreprocessing:
         logger.info("Completed >> char_to_idx_mapper")
         return vocab_size, np_text
 
-    def read_batches(T, vocab_size):
+    def read_batches(self, T, vocab_size):
         logger.info("Started >> read_batches")
 
         length = T.shape[0]
@@ -67,9 +70,9 @@ class DataPreprocessing:
     # Driver Code
     def datapreprocessing_driver():
         logger.info("<<<<<<<<<<<<<< Initialised >>>>>>>>>>>>>>>>")
-        text = open(DATA_FILE).read()
-
-        DataPreprocessing.precheck(text)
-        vocab_size, np_text = DataPreprocessing.char_to_idx_mapper(text)
+        DataPreprocessing.precheck(TEXT)
+        vocab_size, np_text = DataPreprocessing.char_to_idx_mapper(TEXT)
+        store_value("np_text", np_text)
+        store_value("vocab_size", vocab_size)
         # read_batches(np_text, vocab_size)
         logger.info("<<<<<<<<<<<<<< Completed >>>>>>>>>>>>>>>>")
