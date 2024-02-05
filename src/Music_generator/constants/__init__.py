@@ -24,7 +24,7 @@ CONVERTED_FILE = 'exports\char_to_idx.json'
 BATCH_SIZE = 16
 SEQ_LENGTH = 64
 MODEL_VOCAB_SIZE = 50
-EPOCHS = 5
+EPOCHS = 100
 
 
 # Runtime Variables

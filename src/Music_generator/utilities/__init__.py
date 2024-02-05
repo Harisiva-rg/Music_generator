@@ -35,3 +35,7 @@ def load_value(variable_name):
         return data.get(variable_name)
     else:
         return None
+
+def store_notes(value):
+    with open('exports\gen_notes.txt', 'w') as f:
+        f.write(value)

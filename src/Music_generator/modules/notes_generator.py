@@ -2,7 +2,7 @@ from music_generator.constants import *
 from music_generator import logger
 import json
 import numpy as np
-from music_generator.utilities import load_weights, store_value
+from music_generator.utilities import load_weights, store_value, store_notes
 from music_generator.modules.model_builder import RNN_model
 from keras.models import Sequential, load_model
 from keras.layers import LSTM, Dropout, TimeDistributed, Dense, Activation, Embedding
@@ -44,5 +44,6 @@ class NotesGenerator:
         logger.info("<<<<<<<<<<<<<< Initialised >>>>>>>>>>>>>>>>")
         music_notes = NotesGenerator.sample(EPOCHS,SEED,NUM_CHARS)
         store_value("music_notes", music_notes)
+        store_notes(music_notes)
         print(music_notes)
         logger.info("<<<<<<<<<<<<<< Completed >>>>>>>>>>>>>>>>")
