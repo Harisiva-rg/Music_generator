@@ -1,21 +1,43 @@
-r@@@e @wette
-% Nottingham Music Database
-S:Trad, arr Phil Rowe
-M:6/8
-K:F
-|:B|"Bb"B2B BAB|"Bb"B2d ded|cBA B2c|"Bb"ded "F"c2B|"Bb"BdB G2:|
-P:B
-B|"Bb"B2B BAB|"Bb"def def|"Eb"gag "B7"fgf|"Em"e2f edB|"Bm"dcB "Em"e2d|
-"Em"gab bag|"B7"a2b b2a|"Em"gef "D"gfe|"Bm"fed dcB|
-"Em"g2g gab|"D"afa "Bm"baf|"Em"gag "D"fga|"Bm"fed "Em"e2d|
-"D"Add "G"Bdd|"D"FAB "G"GBd|"D"AFD "Em"GED|"Em"B,2E E2:|
-
-
-X: 213
-T:Homanichan Jig
+omamy M3
 % Nottingham Music Database
 S:Jimmy MacKay, via EF
 M:6/8
+K:G
+P:A
+|:d|"G"ded Bdg|"C"age "Am"e2a|"Em"def gfe|"Am"dcB "D7"A2d/2e/2f|
+"G"gbg "C"efg|"D7"fed cBA|"G"GAG B2c|"G"ded dBG|"A7"AcA G2A|
+"G"BAB dBd|"C"ece "D7"def|"G"gag "D7"fef|"G"gdB "D7"cBA|"G"G3 -G2||
+
+
+X: 184
+T:Lintters's Aronnigh
+% Nottingham Music Database
+S:Trad, arr Phil Rowe
+M:6/8
+K:G
+D|"G"B2B B^AB|"Em"G2G G3|"Em"BAG  F2G|"D"FED ABf|
+"Em"g2e "D"f2d|"G"e2d "D7"c2d|"G"B3 -B2d|"C"c2e "D"B2A|"G"G2G "D7"AGF|"G"G3 -G2:|
+P:B
+B,/2C/2|"G"D2D "D"F2A|"G"BAG BdB|"C"cdc "G"BAG|"D"A3 -A2::\
+E|"D"A2D D2D|"C"E2E F2G|"D"A2A "Bm"A2B|"Em"GEE "A7"E2E|
+"D"F2F "G"GFG|"D"A2d "Bm"AGF|"Em"E2F GFE|"D"F2A "A7"GFE|"D"D2D F2A|"D"d2d "E7"edB|\
+"A7"ABc "D"d3:|
+
+
+X: 182
+T:Galse's Hornpipe
+% Nottingham Music Database
+S:Kevin Briggs
+P:AAB
+M:4/4
+L:1/8
+R:Hornpipe
 K:A
 P:A
-|:(3e/2f/2g/2|"A"a2e "D"f2e|"A"c3 c3|"A"A
+A2|"A"c2ae agec|"E7"d2B gcBB|"A"Acea acaf|"E7"(3efe(3dcB "A"c2A2|
+"A"c2a2 c2cd|"Bm"B2b2 B2Bc|"D"defg agfd|"A"e2cd "E7"edcB|
+"A"AGA(3ac ecAc|"E7"dBGB dcB2|"A"cdec "E7"B2GE|"A"A2a2 A2:|
+
+
+X: 59
+T:King of the

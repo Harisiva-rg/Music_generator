@@ -39,3 +39,15 @@ def load_value(variable_name):
 def store_notes(value):
     with open('exports\gen_notes.txt', 'w') as f:
         f.write(value)
+
+def music_split(generated_notes):
+    if "X:" in generated_notes:
+        split_notes = generated_notes.split('X:')
+        if len(split_notes) >  1:
+            music_pick = split_notes[1].strip()
+            music_pick = 'X:' + music_pick
+            return music_pick
+        else:
+            return "No content found"
+    else:
+        return "No X in content, invalid format"

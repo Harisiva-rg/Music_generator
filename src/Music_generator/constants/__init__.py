@@ -19,16 +19,18 @@ DATA_FILE = 'data\\raw\\Music_Input_Notts.txt'
 OUT_FILE = 'exports\\gen_out.abc'
 TRAINED_MODEL = 'models\weights.100.h5'
 CONVERTED_FILE = 'exports\char_to_idx.json'
+MIDI_OUT = 'exports\\Composed_music.abc'
 
 #Hyperparameters
 BATCH_SIZE = 16
 SEQ_LENGTH = 64
 MODEL_VOCAB_SIZE = 50
 EPOCHS = 100
+# TRAINER_EPOCHS = 200
 
 
 # Runtime Variables
 TEXT = open(DATA_FILE).read()
 SAVE_FREQ = 10
-SEED = 29
-NUM_CHARS = 512
+SEED = 292929
+NUM_CHARS = 1024
