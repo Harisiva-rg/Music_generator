@@ -19,7 +19,7 @@ DATA_FILE = 'data\\raw\\Music_Input_Notts.txt'
 OUT_FILE = 'exports\\gen_out.abc'
 TRAINED_MODEL = 'models\weights.100.h5'
 CONVERTED_FILE = 'exports\char_to_idx.json'
-MIDI_OUT = 'exports\\Composed_music.abc'
+MIDI_OUT = 'exports\\Composed_music.mid'
 
 #Hyperparameters
 BATCH_SIZE = 16
